@@ -10,7 +10,6 @@ gem 'jquery-rails'
 
 gem 'turbolinks'
 gem 'haml', '~> 4.0.0'
-gem 'haml-rails'
 
 gem 'jbuilder', '~> 1.2'
 
