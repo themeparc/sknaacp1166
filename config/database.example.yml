@@ -19,6 +19,7 @@ development:
   encoding: unicode
   database: sknaacp1166_development
   pool: 5
+  host: localhost
   username: 
   password:
 
@@ -47,6 +48,7 @@ test:
   adapter: postgresql
   encoding: unicode
   database: sknaacp1166_test
+  host: localhost
   pool: 5
   username: 
   password:
