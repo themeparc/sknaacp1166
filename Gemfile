@@ -9,7 +9,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 gem 'turbolinks'
-gem 'haml'
+gem 'haml', '~> 4.0.0'
 gem 'haml-rails'
 
 gem 'jbuilder', '~> 1.2'
