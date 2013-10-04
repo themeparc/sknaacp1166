@@ -142,7 +142,7 @@ PLATFORMS
 DEPENDENCIES
   anjlab-bootstrap-rails!
   coffee-rails (~> 4.0.0)
-  haml
+  haml (~> 4.0.0)
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails
