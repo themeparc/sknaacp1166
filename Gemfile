@@ -5,13 +5,11 @@ gem 'pg'
 
 gem 'haml'
 gem 'sass-rails', '~> 4.0.0'
-
-group :assets do  
-  gem 'uglifier', '>= 1.3.0'
-  gem 'coffee-rails', '~> 4.0.0'
-  gem 'jquery-rails'
-  gem 'haml-rails', '0.4'
-end
+ 
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'haml-rails', '0.4'
 
 gem 'turbolinks'
 
