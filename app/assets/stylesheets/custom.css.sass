@@ -3,6 +3,7 @@
 // COLORS
 ////////////////
 $base:   #f1f1f1
+$black:  #000
 $yellow: #f6cb5b
 $blue:   #00264c
 $white:  #fff
@@ -11,6 +12,7 @@ body
   background: $base
   font-size: 16px
   font-family: 'Roboto', sans-serif
+  padding-top: 55px
 
 h1, h2, h3, h4, h5
   font-family: 'Fjalla One', sans-serif
@@ -20,10 +22,30 @@ h1, h2, h3, h4, h5
   background: $blue
   border-top: 5px solid $yellow
   border-bottom: 0
-  //margin-bottom: 20px
+  margin-bottom: 0
 
   a, a.navbar-brand
     color: $white
   
   .nav > li > a:hover
     background: $yellow
+    color: $blue
+
+#splash
+  background: image-url('splash.jpg') no-repeat
+  background-size: cover
+  border-bottom: 10px solid $blue
+  min-height: 450px
+  text-align: center
+
+  .logo-image
+    margin-top: 40px
+    width: 150px
+  .logo-text
+    color: $white
+    text-align: center
+    text-shadow: 0 2px 3px $black
+    span
+      display: block
+    .large 
+      font-size: 62px
