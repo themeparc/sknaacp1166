@@ -5,8 +5,9 @@ html
     == stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true 
     == javascript_include_tag "application", "data-turbolinks-track" => true 
     == javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
+    == javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.6/jquery.scrollTo.min.js"
     == csrf_meta_tags
-  body
+  body#home
     .navbar.navbar-fixed-top role="navigation"
       .container-fluid
         .navbar-header
@@ -18,13 +19,13 @@ html
         .navbar-collapse.collapse.navbar-right
           ul.nav.navbar-nav 
             li 
-              a href="" Home
+              == link_to  "Home", '#splash', class: "scroll"
             li 
-              a href="" Calendar
+              == link_to  "Calendar", '#calendar', class: "scroll"
             li 
-              a href="" Join
+              == link_to 'Join', '#join', class: "scroll"
             li 
-              a href="" Contact
+              == link_to 'Contact', '#contact', class: "scroll"
     section#splash
       .container-fluid
         .row
@@ -37,11 +38,11 @@ html
     section#latest
       .container-fluid
         .row
-          a.col-sm-8.card.white.medium href=""
+          a.col-sm-8.card.white.medium.scroll href="#calendar"
             span.title Freedom Fund &amp; Scholarship Banquet | Nov 9
             span.iconic
               i.icon-calendar-empty.icon-4x
-          a.col-sm-3.col-sm-offset-1.card.yellow.medium.center href=""
+          a.col-sm-3.col-sm-offset-1.card.yellow.medium.scroll.center href="#join"
             span.title Join Branch 1166
     section.interlude
       .container-fluid
@@ -106,8 +107,6 @@ html
               input.nbtn type="reset" value="Reset" 
               input.nbtn type="submit" value="Submit"
           .col-sm-4.col-sm-offset-2
-            h4 President
-            p Benny Williams
             h4 Phone
             p 503-566-8876
             h4 Address
