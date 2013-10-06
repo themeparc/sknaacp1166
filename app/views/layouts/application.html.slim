@@ -2,19 +2,19 @@ doctype html
 html 
   head 
     title Salem-Keizer NAACP Branch 1166
+    meta name="viewport" content="width=device-width initial-scale=1.0"
     == stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true 
     == javascript_include_tag "application", "data-turbolinks-track" => true 
     == javascript_include_tag "http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
     == javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.6/jquery.scrollTo.min.js"
+    == javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
     == csrf_meta_tags
   body#home
     .navbar.navbar-fixed-top role="navigation"
       .container-fluid
         .navbar-header
           button.navbar-toggle.collapsed data-toggle="collapse" data-target=".navbar-collapse"
-            span.icon-bar 
-            span.icon-bar 
-            span.icon-bar 
+            i.icon-reorder.white 
           a.navbar-brand href="#" Salem-Keizer NAACP
         .navbar-collapse.collapse.navbar-right
           ul.nav.navbar-nav 
@@ -38,11 +38,11 @@ html
     section#latest
       .container-fluid
         .row
-          a.col-sm-8.card.white.medium.scroll href="#calendar"
+          a.col-sm-12.col-md-8.card.white.medium.scroll href="#calendar"
             span.title Freedom Fund &amp; Scholarship Banquet | Nov 9
-            span.iconic
-              i.icon-calendar-empty.icon-4x
-          a.col-sm-3.col-sm-offset-1.card.yellow.medium.scroll.center href="#join"
+            span.iconic.hidden-xs
+              i.icon-calendar-empty.icon-4x.hidden-xs
+          a.col-sm-12.col-md-3.col-md-offset-1.card.yellow.medium.scroll.center href="#join"
             span.title Join Branch 1166
     section.interlude
       .container-fluid
@@ -54,32 +54,34 @@ html
       .container-fluid
         .row
           h2 Calendar
-          .col-sm-8.card.blue.auto-height
+          .col-sm-12.col-md-8.card.blue.auto-height
             h2.title 
-              | Freedom Fund &amp; Scholarship Banquet 
-              br
+              | Believe and Acheive Freedom Fund &amp; Scholarship Banquet 
               small at the 
               span.yellow Red Lion Hotel
-            address 3301 Market St NE Salem, OR 
-            p Novemver 9, 2013 at 6:00 PM
+            p.yellow 
+              |Novemver 9, 2013 at 6:00 PM 
+              br
+              | 3301 Market St NE Salem, OR 
             p The keynote speaker will be <a class="yellow" href="http://www.naacp.org/pages/hilary-o.-shelton">Hilary O. Shelton</a>, Senior Vice President for Advocacy and Policy of the NAACP Washington Bureau National Office.
             p NAACP Pioneer &amp; Scholarship Awards
             p Buffet Dinner and Door Prizes
-            p 
+            p.yellow 
+              strong Tickets $80 - Call 503-566-8876
 
     section#join
       .container-fluid
         .row
           .col-sm-12
             h2 Join NAACP Branch 1166
-          .col-sm-8
+          .col-sm-7
             p Founded Feb. 12. 1909, the NAACP is the nation's oldest, largest and most widely recognized grassroots-based civil rights organization. Its more than half-million members and supporters throughout the United States and the world are the premier advocates for civil rights in their communities, campaigning for equal opportunity and conducting voter mobilization.
             p The Salem-Keizer branch of the NAACP was reformed in 1994 with over 200 memember. The goals of the Salem-Keizer NAACP include:
             ul
               li Responding Effectively to issues of discrimination in Salem and Keizer.
               li Providing opportunities for communal sharing and support amongst people of color in Salem-Keizer and;
               li Promoting a strong sense of inclusiveness and cooperation througout the Salem-Keizer community.
-          .col-sm-4
+          .col-sm-4.col-md-offset1-1
             h3 Membership form
             a.nbtn href="NAACP_Membership_Form.pdf" Download
 
