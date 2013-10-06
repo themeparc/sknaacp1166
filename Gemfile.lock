@@ -36,6 +36,9 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.14)
+    bourbon (3.1.8)
+      sass (>= 3.2.0)
+      thor
     builder (3.1.4)
     capistrano (2.15.5)
       highline
@@ -138,6 +141,7 @@ PLATFORMS
 
 DEPENDENCIES
   anjlab-bootstrap-rails!
+  bourbon
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
