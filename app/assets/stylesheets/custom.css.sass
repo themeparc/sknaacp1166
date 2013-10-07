@@ -130,6 +130,10 @@ section.interlude
 section#join
   background: $yellow image-url('watermark_logo.png') no-repeat right center
 
+section#contact
+  .success
+    display: none
+
 footer
   background: $blue
   border-bottom: 5px solid $yellow
@@ -139,11 +143,12 @@ footer
 .center
   text-align: center
 
+
 .form-group
-  input[type=text], textarea
+  input[type=text], input[type=email], textarea
     background: $base - 20
     border: none
-  input:focus[type=text], textarea:focus
+  input:focus[type=text], input:focus[type=email], textarea:focus
     background: $white
     @include transition(all .5s)
   input[type=reset]

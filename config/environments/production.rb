@@ -77,4 +77,22 @@ Sknaacp1166::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Don't care if the mailer can't send?
+  config.action_mailer.raise_delivery_errors = true
+
+  # Change mail delvery to either :smtp, :sendmail, :file, :test
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.mandrillapp.com",
+    port: 587,
+    domain: "sknaacp1166.org",
+    authentication: "plain",
+    #enable_starttls_auto: true,
+    user_name: 'admin@themeparc.co',
+    password: 'YVE4Xkg8BOg6dQ0Y7XWXKw'
+  }
+
+  # Specify what domain to use for mailer URLs
+  config.action_mailer.default_url_options = {host: "sknaacp1166.org"}
 end

@@ -48,3 +48,18 @@ $(document).ready ->
     ,
     { offset: 258 }
   )
+
+  $('form#contact-form').submit( (e)->
+    e.preventDefault()
+    $('input[type="submit"], input[type="reset"]').attr('disabled', 'disabled')
+    console.log $(this).serialize()
+    $.ajax '/send_message',
+      type: 'POST'
+      dataType: 'text'
+      data: $(this).serialize()
+      error: (jqXHR, textStatus, errorThrown) ->
+          console.log errorThrown
+      success: (data, textStatus, jqXHR) ->
+          $('form#contact-form input, form#contact-form textarea, form#contact-form .btn, form#contact-form label').css({opacity: '0.2'})
+          $('#contact .success').fadeIn()
+  )
