@@ -3,6 +3,6 @@ class Contact < ActionMailer::Base
 
   def send_contact_form(message)
     @message = message
-    mail to: 'admin@themeparc.co', from: @message[:email], subject: "New message from sknaacp1166.org"
+    mail to: 'salemkeizernaacp@gmail.com', from: @message[:email], subject: "New message from sknaacp1166.org"
   end
 end
