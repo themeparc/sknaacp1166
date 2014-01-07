@@ -13,7 +13,6 @@ gem 'bourbon'
 
 gem 'jbuilder', '~> 1.2'
 
-
 gem 'unicorn'
 
 # Use Capistrano for deployment
