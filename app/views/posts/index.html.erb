@@ -1,0 +1,15 @@
+<div class="container">
+<div class="col-xs-12 col-md-8 col-md-offset-2">
+  <h1>News</h1>
+  <% @posts.each do |post| %>
+    <h2><%= link_to post.title, post_path(post)%></h2>
+    <p>Published: <%= post.published_at.strftime("%B %d, %Y") %></p>
+    <%= post.body.truncate(300).html_safe %>
+    <p>
+     <% if current_user %>
+      <%= link_to 'Edit', edit_post_path(post) %>
+     <% end %>
+    </p>
+  <% end %>
+</div>
+</div>
